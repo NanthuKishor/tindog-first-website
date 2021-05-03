@@ -1,0 +1,216 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  color: #8f8f8f;
+  font-weight: 500;
+}
+
+.container-fluid {
+  padding: 3% 10%;
+}
+
+/* Sections */
+
+.colored-section {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/* Headings */
+
+.big-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+.section-heading {
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 800;
+}
+ /* Navigation bar */
+
+ .navbar {
+  padding-bottom: 4.5rem;  /* to increase the gap between the navbar and the content below without touching anything */
+ }
+
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2.3rem;
+  font-weight: 400;
+}
+
+.nav-item {
+  padding: 0 18px;   /* to increase space between them. */
+                     /* used fixed value (18px) instead of percentage value because, if the size of screen reduces, it will become toggler*/
+
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Title Section */
+
+#title {               /* "#fff" is white by default & "#000" is black by default */
+  text-align: left;
+}
+
+.download-button {
+  margin: 5% 3% 50px 0;  /*50px bcos while reducing screen size, the phone and download button are almost touching */
+}                        /* if using % then the size will change */
+
+.title-image {
+  width: 20%;
+  right: 20%;
+  transform: rotate(25deg) ;
+  /*padding-bottom: 10px;  10px bcos while reducing screen size, the phone end is almost touching the color ending */
+  position: absolute;
+}
+
+/* Feature Section */
+
+#features {
+  padding: 7% 5%;
+  position: relative;
+  /* z-index: 1; */
+}
+
+.feature-title {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 0 1%;
+  font-size: 1rem; /* This will not effect the size of the "h3", thought it is inside the same div.
+                      We have to change the font size of "h3" separatly. */
+}
+
+.icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #ff4c68;   /* to change the icon color to this color mentioned when hovered */
+}
+
+/* Testimonials Section */
+
+#testimonials {
+  /* padding: 7% 15%; */
+  background-color: #ef8172;
+   /* If we remove padding from this section and put it in the below section then it will allow the slide arrows
+   to be outside the padding and will keep it visually good. */
+}
+
+.testimonial-text {
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 800;
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;  /* to make the square shapped photo into a circle */
+  margin: 20px;
+}
+
+/* Press */
+
+#press {
+
+  background-color: #ef8171;
+  padding-bottom: 3%;
+}
+
+.price-text {
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 800;
+}
+
+.press-logo {
+  width: 12%;
+  margin: 50px 20px 30px;
+}
+
+/* Pricing Section */
+
+#pricing {
+  padding: 6%;
+}
+
+.card-name {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.pricing-column {
+  padding: 5% 2%;
+}
+
+/* Call to Acton Section */
+
+#cta {
+  padding: 7% 15%;
+}
+
+.cta-h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  padding-bottom: 5%;
+}
+
+.cta-button {
+  margin-right: 1%;
+}
+
+/* Footer Section */
+
+#footer {
+  padding: 7% 15%;
+}
+
+.icon-footer {
+  margin: 20px 10px;
+}
+
+.cta-para {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* Media Query */
+
+@media (max-width: 991px) {
+  #title {                           /* Though "nav-bar" is not effected by these changes */
+    text-align: center;
+  }
+  .title-image {
+    transform: rotate(0);
+    position: static;
+    width: 50%;
+  }
+}
